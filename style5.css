@@ -1,0 +1,266 @@
+:root{
+    --blue: hsl(198, 60%, 50%)​;
+    --cyan: hsl(176, 68%, 64%);
+}
+@font-face {
+    font-family: "open-sans";
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+@font-face{
+    font-family: "Raleway";
+    src: url("fonts/Raleway-Regular.ttf");
+}
+
+*{
+    color: white;
+    font-family:"Raleway";
+    
+}
+
+body{
+    background-color: hsl(217, 28%, 15%);
+}
+
+.top_bar{
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-grow: initial;
+}
+.top_bar a{
+    font-family: "Raleway";
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.top_bar a:nth-child(1){
+    flex-grow: 1;
+}
+header{
+    text-align: center;
+    /* background-image: url(images/bg-curvy-desktop.svg);   <---  As caixas non permiten ver o fondo */
+    margin-bottom: 50px;
+}
+input[name="getit"]{
+    height: 45px;
+    width: 200px;
+    background-color: var(--cyan);
+    border-radius: 25px;
+    font-weight: bold;
+    border: none;
+}
+.allboxes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.box{
+    padding-top: 100px;
+    flex-basis: 50%;
+}
+.obey{
+    margin-top: 150px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.produce1{
+    flex-basis: 50%;
+}
+
+.produce2{
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-direction: column;
+    text-align: start;
+    flex-basis: 50%;
+}
+.produce2 p{
+    font-family: "open-sans";
+}
+.produce2 a{
+    font-family: "open-sans";
+    color: var(--cyan);
+}
+
+.workers{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: initial;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+.wo{
+    flex-direction: column;
+    flex-grow: 1;
+    box-shadow: 2px 2px 10px hsl(219, 30%, 22%);
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsl(219, 30%, 18%);
+    text-decoration: none;
+}
+.wo p{
+    font-family: "open-sans";
+    background-color: hsl(219, 30%, 18%);
+}
+.wo div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background-color: hsl(219, 30%, 18%);
+}
+
+
+.wo img{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-left: 40px;
+}
+.woid{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(219, 30%, 18%);
+    
+}
+.woid p{
+    font-size: 10px;    
+}
+.e_access{
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 100px;
+    background: hsl(219, 30%, 18%);
+    border-radius: 18px;
+    padding: 20px;
+    padding-top: 0px;
+    box-shadow: 3px 3px 4px black;
+}
+.e_access h1{
+    background-color: hsl(219, 30%, 18%);
+}
+.e_access p{
+    background-color: hsl(219, 30%, 18%);
+}
+form{
+    background-color: hsl(219, 30%, 18%);
+    border-radius: 18px;
+}
+form input[name="search"]{
+    width: 380px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: white;
+    padding-left: 15px;
+    margin-right: 15px;
+    border: none;
+    color: hsl(218, 28%, 13%);
+}
+form input[name="publish"]{
+    width: 200px;
+    height: 35px;
+    border-radius: 25px;
+    background-color: var(--cyan);
+    font-weight: bold;
+    border: none;
+}
+.foot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(216, 53%, 9%);
+    padding: 50px;
+
+}
+.feet img{
+    background-color: hsl(216, 53%, 9%);
+}
+.feet{
+    background-color: hsl(216, 53%, 9%);
+    padding: 20px;
+    flex-direction: column;
+}
+.feet p{
+    background-color: hsl(216, 53%, 9%);
+    flex-direction: column;
+}
+.feet a{
+    flex-direction: column;
+    padding: 15px;
+    text-decoration: none;
+    background-color: hsl(216, 53%, 9%);
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+
+/* 
+
+
+
+
+The designs were created to the following widths
+​
+- Mobile 375px
+- Desktop: 1440px
+## Colors
+​
+### Primary
+​
+- Dark Blue (intro and email sign up background): hsl(217, 28%, 15%)
+- Dark Blue (main background): hsl(218, 28%, 13%)
+- Dark Blue (footer background): hsl(216, 53%, 9%)
+- Dark Blue (testimonials background): hsl(219, 30%, 18%)
+​
+### Accent
+​
+- Cyan (inside call-to-action gradient): hsl(176, 68%, 64%)
+- Blue (inside call-to-action gradient): hsl(198, 60%, 50%)
+​
+### Neutral
+​
+- White: hsl(0, 0%, 100%)
+​
+## Typography
+​
+### Body Copy
+​
+- Font size: 14px
+​
+### Headings, Call-to-actions, Header Navigation
+​
+- Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+- Weights: 400, 700
+​
+### Body
+​
+- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+- Weights: 400, 700
+​
+## Icons
+​
+For the social icons, you can use a font icon library. Some suggestions can be found below:
+​
+- [Font Awesome](https://fontawesome.com/)
+- [IcoMoon](https://icomoon.io/)
+- [Ionicons](https://ionicons.com/)
